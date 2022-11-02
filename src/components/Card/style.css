@@ -3,6 +3,7 @@
     width: 100%;
     display: flex;
     min-height: 25rem;
+    max-width: 22.5rem;
     position: relative;
     border-radius: 3px;
     align-items: center;

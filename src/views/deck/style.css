@@ -13,6 +13,7 @@
 }
 
 .deck > h1 > img {
+    cursor: pointer;
     padding: 5px 8px;
     border-radius: 4px;
     border: 1px solid var(--color-gray400);
@@ -31,4 +32,23 @@
     gap: 20px 0;
     display: flex;
     flex-direction: column;
+}
+
+@media only screen and (min-width: 720px) {
+    .deck {
+        margin: 0 auto;
+        max-width: 70vw;
+    }
+
+    .deck > .deck__cards {
+        gap: 15px;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .deck > .deck__cards > .card__container > img {
+        height: 60%;
+        object-fit: cover;
+    }
 }

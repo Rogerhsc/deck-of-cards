@@ -6,6 +6,7 @@
     bottom: 15px;
     border: none;
     display: flex;
+    cursor: pointer;
     position: fixed;
     border-radius: 100%;
     align-items: center;

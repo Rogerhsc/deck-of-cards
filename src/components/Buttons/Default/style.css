@@ -1,5 +1,6 @@
 .button__default {
     all: unset;
+    cursor: pointer;
     padding: 10px 30px;
     border-radius: 20px;
     color: var(--white);

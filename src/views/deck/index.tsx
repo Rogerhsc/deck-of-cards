@@ -22,7 +22,7 @@ const initState = {
     cards: [],
     position: 5,
     error: false,
-    loading: false
+    loading: false,
 }
 
 const Deck = () => {
@@ -48,6 +48,7 @@ const Deck = () => {
             ...crrState,
             position: state.position + 1
         }
+
         if (state.position === state.cards.length - 1) {
             return {
                 ...newState,
@@ -63,18 +64,18 @@ const Deck = () => {
 
         try {
             const res = await $CatsService.randomCats(limit);
-            setState({
-                ...state,
+            setState((crrState) => ({
+                ...crrState,
                 error: false,
                 loading: false,
                 cards: [...state.cards, ...res],
-            });
+            }));
 
         } catch {
             setState({
                 ...state,
                 error: true,
-                loading: false
+                loading: false,
             });
         }
     }
