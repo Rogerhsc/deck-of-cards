@@ -1,0 +1,42 @@
+.card__container {
+    gap: 10px;
+    width: 100%;
+    display: flex;
+    min-height: 25rem;
+    position: relative;
+    border-radius: 3px;
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: column;
+    border: 5px solid var(--main-color);
+    box-shadow: 0 0 3px 1px rgba(0,0,0, .5);
+}
+
+.card__container > span {
+    top: 0.625rem;
+    right: 0.625rem;
+    position: absolute;
+    font-size: 0.875rem;
+    border-radius: 100%;
+    color: var(--white);
+    padding: 0.3125rem 0.5rem;
+    font-weight: var(--weight-bold);;
+    background-color: var(--main-color);
+}
+
+.card__container > img {
+    width: 100%;
+    object-fit: contain;
+    box-sizing: border-box;
+}
+
+.card__container > p {
+    padding: 0 10px;
+    text-align: center;
+}
+
+.card__container > p:nth-of-type(1) {
+    margin: 0;
+    font-size: 1.4375rem;
+    font-weight: var(--weight-bold);
+}

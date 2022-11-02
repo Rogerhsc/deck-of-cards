@@ -1,0 +1,9 @@
+.button__group {
+    gap: 0 12px;
+    display: flex;
+    justify-content: center;
+}
+
+.button__group > .floating__button > img {
+    filter: invert(1);
+}
