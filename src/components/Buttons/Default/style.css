@@ -1,0 +1,12 @@
+.button__default {
+    all: unset;
+    padding: 10px 30px;
+    border-radius: 20px;
+    color: var(--white);
+    font-weight: var(--weight-bold);
+    background-color: var(--main-color);
+}
+
+.button__default:disabled {
+    background-color: var(--color-gray100);
+}
